@@ -1,5 +1,6 @@
 aal:
-  - rap
+  - rap:
+    url: "http://test"
   - cisl
   - mo
   - fnol
