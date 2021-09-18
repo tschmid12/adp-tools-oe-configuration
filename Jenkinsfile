@@ -1,8 +1,7 @@
 pipeline {
-  stages{
-      stage{
+  stages {
+      stage {
           echo "Hello"
       }
   }
-
 }
