@@ -4,6 +4,7 @@ pipeline {
       stage ('Test') {
         steps {
           echo "Hello"
+          sh "ls -lisa"
         }
       }
   }
