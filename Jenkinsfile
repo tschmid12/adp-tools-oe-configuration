@@ -6,7 +6,7 @@ pipeline {
           echo "Hallo"
           script {
             def cfg = readYaml file: './prometheus/src/config.yml'
-            echo cfg
+            println cfg
           }
           sh "echo ${cfg}"
         }
