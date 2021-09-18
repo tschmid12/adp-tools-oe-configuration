@@ -4,7 +4,9 @@ pipeline {
       stage ('Test') {
         steps {
           echo "Hallo"
-          readyaml file: './prometheus/srv/config.yml'
+          cfg = readyaml file: './prometheus/srv/config.yml'
+          echo cfg
+          sh "echo ${cfg}"
         }
       }
   }
