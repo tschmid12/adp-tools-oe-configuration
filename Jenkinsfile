@@ -3,8 +3,8 @@ pipeline {
   stages {
       stage ('Test') {
         steps {
-          echo "Hello"
-          sh "ls -lisa"
+          cfg = readYaml(file: "./prometheus/src/config.yml")
+          echo cfg
         }
       }
   }
